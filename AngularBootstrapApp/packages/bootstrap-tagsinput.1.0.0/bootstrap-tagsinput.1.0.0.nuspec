@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>bootstrap-tagsinput</id>
+    <version>1.0.0</version>
+    <authors>Tim Schlechter</authors>
+    <owners>Tim Schlechter</owners>
+    <licenseUrl>https://raw.githubusercontent.com/TimSchlechter/bootstrap-tagsinput/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/timschlechter/bootstrap-tagsinput</projectUrl>
+    <iconUrl>http://getbootstrap.com/apple-touch-icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>NuGet Package for bootstrap-tagsinput. See http://github.com/cigano/bootstrap-tagsinput for more details.</description>
+    <releaseNotes>Initial Release.</releaseNotes>
+    <copyright>Copyright 2015 Tim Schlechter</copyright>
+    <tags>Bootstrap Tags</tags>
+    <dependencies>
+      <dependency id="bootstrap" version="[3.0.0, 3.5.5)" />
+    </dependencies>
+  </metadata>
+</package>

@@ -1,0 +1,20 @@
+﻿
+    <div class="row col-md-6 col-md-offset-3" data-ng-controller="datepickerController">
+        
+        <div class="col-md-6">
+             <div class="row">
+        <div class="col-md-12">
+            <h4 class="text-primary">Format:</h4> <select class="form-control" ng-model="format" ng-options="f for f in formats"><option></option></select>
+        </div>
+        </div>
+            <div>
+            <h4 class="text-primary">Datepicker using PopUp button</h4>
+           <p class="input-group">
+              <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="dt" is-open="status.opened" min-date="minDate" max-date="maxDate" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+              </span>
+            </p>
+            </div>
+        </div>
+    </div>

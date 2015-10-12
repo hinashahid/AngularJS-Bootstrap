@@ -1,0 +1,7 @@
+﻿
+<div data-ng-controller="tagsInputController" class="row col-md-6 col-md-offset-3">
+    <tags-input ng-model="tags" add-on-paste="true">
+      <auto-complete source="loadTags($query)"></auto-complete>
+    </tags-input>
+    <p>Model: {{tags}}</p>    
+</div>

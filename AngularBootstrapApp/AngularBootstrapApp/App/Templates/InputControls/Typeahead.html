@@ -1,0 +1,13 @@
+﻿
+<div class="row col-md-12 col-sm-12" data-ng-controller="typeaheadController">
+    <div class ="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
+    
+    <h4>Asynchronous results</h4>
+    <pre>Model: {{asyncSelected | json}}</pre>
+    <input type="text" ng-model="asyncSelected" placeholder="Results loaded via $http" uib-typeahead="state for state in getStates($viewValue)" typeahead-loading="loadingLocations" typeahead-no-results="noResults" class="form-control">
+    <i ng-show="loadingLocations" class="glyphicon glyphicon-refresh"></i>
+    <div ng-show="noResults">
+      <i class="glyphicon glyphicon-remove"></i> No Results Found
+    </div>
+        </div>
+</div>

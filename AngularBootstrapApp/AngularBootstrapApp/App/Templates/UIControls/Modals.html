@@ -1,0 +1,24 @@
+﻿<div data-ng-controller="modalsController" class="col-md-6 col-md-offset-3">
+     <script type="text/ng-template" id="myModalContent.html">
+        <div class="modal-header bg-primary">
+            <h3 class="modal-title">This is Angular Bootstrap Modal</h3>
+        </div>
+        <div class="modal-body">
+            <ul>
+                <li ng-repeat="item in items">
+                    <a href="#" ng-click="$event.preventDefault(); selected.item = item">{{ item }}</a>
+                </li>
+            </ul>
+            Selected: <b>{{ selected.item }}</b>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" type="button" ng-click="ok()">OK</button>
+            <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
+        </div>
+    </script>
+
+    <button type="button" class="btn btn-info" ng-click="open()">Open me!</button>
+    <button type="button" class="btn btn-warning" ng-click="open('lg')">Large modal</button>
+    <button type="button" class="btn btn-danger" ng-click="open('sm')">Small modal</button>
+    <div ng-show="selected">Selection from a modal: {{ selected }}</div>
+</div>
